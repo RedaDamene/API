@@ -3,17 +3,21 @@ const mongoose = require("mongoose");
 const UserModel = mongoose.model(
     "node-api",
     {
-        author: {
+        firstname: {
             type: String, 
             required: true
         },
-        message: {
+        lastname: {
             type: String, 
             required: true
         },
-        date:{
-            type: Date,
-            default: Date.now
+        age:{
+            type: Number,
+            default: true
+        },
+        country: {
+            type: String,
+            required: true
         }
     },
     "users"
